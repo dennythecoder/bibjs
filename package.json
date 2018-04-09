@@ -1,0 +1,23 @@
+{
+  "name": "bibjs",
+  "version": "1.0.0",
+  "description": "Utilities for documents in the browser",
+  "main": "dist/bib.js",
+  "scripts": {
+    "build:browser": "webpack && cp dist/webpack-numbers.js examples/browser",
+    "build:node": "webpack && cp dist/webpack-numbers.js examples/node/ && node examples/node/example.js"
+  },
+
+  "author": "denny",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^3.9.1",
+    "eslint-loader": "^1.6.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.12"
+  }
+}
